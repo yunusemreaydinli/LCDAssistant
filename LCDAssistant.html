@@ -112,7 +112,7 @@
 
 	.byte-input {
 		min-height: 160px;
-		min-width: 360px;
+		min-width: 410px
 	}
 
 	.code-output {
@@ -129,7 +129,7 @@
 
 	button,
 	input[type="file"] {
-		background: #1ca9d4;
+		background: #3498DB;
 		border-radius: 3px;
 		border: none;
 		color: #fff;
@@ -179,19 +179,19 @@
 	}
 
 	#images-canvas-container canvas {
-		border: 3px solid #1ca9d4;
+		border: 3px solid #3498DB;
 		margin: 10px 15px;
 	}
 
 	footer {
 		text-align: center;
 		padding: 10px;
-		background: #1ca9d4;
+		background: #3498DB;
 		border-radius: 3px;
 		font-size: 12px;
 		font-weight: bold;
 		color: #FFF;
-		border-top: #1ca9d4 3px solid;
+		border-top: #3498DB 3px solid;
 		margin-bottom: 10px;
 	}
 
@@ -221,7 +221,150 @@
 	h1 {
 		padding: 10px;
 		color: white;
-		background-color: #1ca9d4;
+		background-color: #3498DB;
+		width: 300px;
+		height: 28px;
+		padding: 15px;
+		color: white;
+		background-color: #3498DB;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	/* test satırı*/
+	.animate {
+		transition: all 0.1s;
+		-webkit-transition: all 0.1s;
+	}
+
+	/* Sol buton */
+	.action-button {
+		top: -5px;
+		left: -301px;
+		position: relative;
+		padding: 10px 17px;
+		float: left;
+		border-radius: 10px;
+		font-family: 'arial', Arial, Helvetica, sans-serif, ;
+		font-size: 15px;
+		color: #FFF;
+		text-decoration: none;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+	}
+
+	/* Sağ buton*/
+	.baction-button {
+		top: -86px;
+		right: -368px;
+		position: relative;
+		padding: 10px 17px;
+		float: left;
+		border-radius: 10px;
+		font-family: 'arial', Arial, Helvetica, sans-serif, ;
+		font-size: 15px;
+		color: #FFF;
+		text-decoration: none;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+	}
+
+	/* orta text alt*/
+	.deaction-button {
+		position: relative;
+		padding: 10px 307px;
+		float: left;
+		border-radius: 10px;
+		font-family: 'arial', Arial, Helvetica, sans-serif;
+		font-size: 15px;
+		color: #FFF;
+		text-decoration: none;
+		justify-content: center;
+		align-items: center;
+		border-color: #2980B9 3px solid;
+		right: 0px;
+	}
+
+	.ortaction-button {
+		top: -5px;
+		left: -274px;
+		position: relative;
+		padding: 10px 17px;
+		float: left;
+		border-radius: 10px;
+		font-family: 'arial', Arial, Helvetica, sans-serif, ;
+		font-size: 15px;
+		color: #FFF;
+		text-decoration: none;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+	}
+
+
+	.blueorta {
+		background-color: #3498DB;
+	}
+
+	.action-small-button {
+		position: relative;
+		padding: 10px 17px;
+		margin: 0px 2px 0px 0px;
+		float: left;
+		border-radius: 4px;
+		font-family: 'arial';
+		font-size: 15px;
+		color: #FFF;
+		text-decoration: none;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+	}
+
+	.action-small-button:active {
+		transform: translate(0px, 5px);
+		-webkit-transform: translate(0px, 5px);
+		border-bottom: 1px solid;
+	}
+
+
+	/* orta text UP*/
+	.blue {
+		background-color: #3498DB;
+		border-bottom: 5px solid #2980B9;
+		text-shadow: 0px -2px #2980B9;
+	}
+
+	.green {
+		background-color: #82BF56;
+		border-bottom: 5px solid #669644;
+		text-shadow: 0px -2px #669644;
+	}
+
+	.red {
+		background-color: #E74C3C;
+		border-bottom: 5px solid #BD3E31;
+		text-shadow: 0px -2px #BD3E31;
+	}
+
+	.yellow {
+		/* 	background-color: #F2CF66;
+	border-bottom: 5px solid #D1B358;
+	text-shadow: 0px -2px #D1B358; */
+		top: -44px;
+		left: 16px;
+		position: relative;
+		font-size: large;
+	}
+
+	.action-button:active {
+		transform: translate(0px, 5px);
+		-webkit-transform: translate(0px, 5px);
+		border-bottom: 1px solid;
 	}
 </style>
 
@@ -231,13 +374,29 @@
 	<link rel="icon"
 		href="https://www.flaticon.com/svg/vstatic/svg/3845/3845723.svg?token=exp=1613316912~hmac=dcd8d839fd8e03ba1affb0a2df3f5d71"
 		type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
 	<div class="wrapper">
 		<section class="section">
-			<h1>LCDAssistant - Image2cpp</h1>
-			<p>LCDAssistant - image2cpp, Arduino ve OLED'ler gibi (tek renkli) ekranlarla kullanım için görüntüleri bayt
+			<div style="display: flex; justify-content: space-between;">
+
+				<h1 class="deaction-button animate blueorta"><a href="http://projedefteri.tk"
+						class="action-button shadow animate green fa fa-arrow-circle-left"
+						rel="nofollow ugc">&nbsp;&nbsp;Proje
+						Defteri Ana
+						Sayfasına Dön</a><a class="ortaction-button yellow">&nbsp;&nbsp;LCDAssistant - image2cpp</a><a
+						href="http://projedefteri.tk/docs"
+						class="baction-button shadow animate green fa fa-arrow-circle-left"
+						rel="nofollow ugc">&nbsp;&nbsp;Proje DefteriDOC'a Geri Dön</a>
+				</h1>
+			</div>
+			<p>LCDAssistant - image2cpp, Arduino ve OLED'ler gibi (tek renkli) ekranlarla kullanım için görüntüleri
+				bayt
 				dizilerine (veya dizinizi tekrar görüntüye) dönüştürmek için basit bir araçtır.
 				Arduino için bir örnek taslak ve bu kitaplık bulunabilir <a
 					href="https://github.com/javl/image2cpp/blob/master/oled_example/oled_example.ino"
@@ -1566,12 +1725,12 @@
 
 		.byte-input {
 			min-height: 160px;
-			min-width: 360px;
+			min-width: 410px;
 		}
 
 		.code-output {
 			height: 200px;
-			width: 100%;
+			width: 913px;
 		}
 
 		.note {
@@ -1583,7 +1742,8 @@
 
 		button,
 		input[type="file"] {
-			background: #1ca9d4;
+			background: #3498DB;
+			;
 			border-radius: 3px;
 			border: none;
 			color: #fff;
