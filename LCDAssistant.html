@@ -117,7 +117,7 @@
 
 	.code-output {
 		height: 200px;
-		width: 100%;
+		width: 913px;
 	}
 
 	.note {
@@ -354,6 +354,20 @@
 		-webkit-transform: translate(0px, 5px);
 		border-bottom: 1px solid;
 	}
+
+	.footer {
+		position: relative;
+		padding: 10px 206px;
+		border-radius: 3px;
+		font-family: 'arial', Arial, Helvetica, sans-serif;
+		font-size: 15px;
+		color: #FFF;
+		text-decoration: none;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		border-top: #2980B9 3px solid;
+	}
 </style>
 
 <head>
@@ -374,12 +388,12 @@
 			<div style="display: flex; justify-content: space-between;">
 
 				<h1 class="deaction-button animate blueorta"><a href="http://projedefteri.tk"
-						class="action-button shadow animate green fa fa-arrow-circle-left"
+						target="_blank" class="action-button shadow animate green fa fa-arrow-circle-left"
 						rel="nofollow ugc">&nbsp;&nbsp;Proje
 						Defteri Ana
 						Sayfasına Dön</a><a class="ortaction-button yellow">&nbsp;&nbsp;LCDAssistant - image2cpp</a><a
 						href="http://projedefteri.tk/docs"
-						class="baction-button shadow animate green fa fa-arrow-circle-left"
+						target="_blank" class="baction-button shadow animate green fa fa-arrow-circle-left"
 						rel="nofollow ugc">&nbsp;&nbsp;Proje DefteriDOC'a Geri Dön</a>
 				</h1>
 			</div>
@@ -585,7 +599,7 @@
 				<textarea id="code-output" class="code-output"></textarea>
 			</section>
 		</section>
-		<footer>
+		<footer class="deaction-button animate blueorta footer">
 			Sayfa kaynağı&nbsp;<a href="https://javl.github.io/image2cpp/" target="_blank">image2cpp</a>'den alınarak
 			düzenlenmiştir.
 		</footer>
