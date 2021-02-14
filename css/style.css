@@ -1,0 +1,371 @@
+	* {
+	    margin: 0;
+	    padding: 0;
+	}
+
+	a {
+	    color: #FFF;
+	}
+
+	body {
+	    font-family: Arial;
+	}
+
+	.wrapper {
+	    display: flex;
+	    flex-direction: column;
+	    margin: auto;
+	    width: 915px;
+	}
+
+	.section {
+	    margin: 10px 0;
+	}
+
+	.bottom-divider {
+	    border-bottom: 2px solid #000000;
+	    padding-bottom: 20px;
+	}
+
+	.sub-section {
+	    clear: both;
+	    margin-bottom: 1px;
+	}
+
+	.section,
+	.sub-section {
+	    width: 100%;
+	}
+
+	.column {
+	    float: left;
+	}
+
+	.column-center {
+	    min-width: 160px;
+	    text-align: center;
+	}
+
+	.column-right {
+	    float: right;
+	}
+
+	.sub-section-title {
+	    margin: 0 0 10px;
+	}
+
+	p {
+	    margin: 20px 0;
+	}
+
+	.table {
+	    display: table;
+	    margin: 10px 0 0;
+	    width: 100%;
+	}
+
+	.table-row {
+	    display: table-row;
+	    width: 100%;
+	}
+
+	.table-cell {
+	    display: table-cell;
+	    padding: 5px 0;
+	}
+
+	.table-cell:first-child {
+	    width: 30%;
+	}
+
+	.table-cell:last-child {
+	    width: 70%;
+	}
+
+	.table-cell:first-child label {
+	    font-weight: bold;
+	}
+
+	.table-cell:last-child label {
+	    margin-right: 10px;
+	}
+
+	.nested-table {
+	    margin: 0;
+	}
+
+	.nested-table .table-cell {
+	    color: #666;
+	    font-size: .9em;
+	    width: 200px;
+	}
+
+	.nested-table .table-cell:first-child {}
+
+	#format-caption-container div {
+	    color: #505050;
+	    display: none;
+	    font-size: .9em;
+	    line-height: 1.4em;
+	    padding: 10px 0 15px;
+	    width: 100%;
+	}
+
+	.byte-input {
+	    min-height: 160px;
+	    min-width: 410px
+	}
+
+	.code-output {
+	    height: 200px;
+	    width: 913px;
+	}
+
+	.note {
+	    color: #666666;
+	    font-size: .9em;
+	    line-height: 1.4em;
+	    margin: 3px 0;
+	}
+
+	button,
+	input[type="file"] {
+	    background: #3498DB;
+	    border-radius: 3px;
+	    border: none;
+	    color: #fff;
+	    font-size: .9em;
+	    font-weight: bold;
+	    margin: 10px 0;
+	    padding: 4px 8px;
+	}
+
+	input[type="file"] {
+	    font-size: 1.0em;
+	    padding: 6px 20px;
+	}
+
+	.generate-button {
+	    margin: 40px 0 20px;
+	}
+
+	.remove-button {
+	    margin: 0 0 0 10px;
+	    padding: 1px 4px;
+	}
+
+	.file-info {
+	    color: #505050;
+	    font-size: .7em;
+	    margin-left: 20px;
+	    max-width: 300px;
+	    white-space: pre;
+	}
+
+	.size-input {
+	    width: 45px;
+	}
+
+	.glyph-input {
+	    width: 80px;
+	    margin-left: 10px;
+	}
+
+	#image-size-settings {
+	    list-style-type: none;
+	}
+
+	#image-size-settings li {
+	    margin: 4px 0;
+	}
+
+	#images-canvas-container canvas {
+	    border: 3px solid #3498DB;
+	    margin: 10px 15px;
+	}
+
+	#images-canvas-container {
+	    align-items: flex-start;
+	    display: flex;
+	    flex-wrap: wrap;
+	}
+
+	#extra-settings-container {}
+
+	#arduino-identifier,
+	#adafruit-gfx-settings,
+	#all-same-size {
+	    display: none;
+	}
+
+	.msg {
+	    font-size: 1.2em;
+	}
+
+	.error-msg {
+	    color: #ff0000;
+	    display: none;
+	}
+
+	h1 {
+	    padding: 10px;
+	    color: white;
+	    background-color: #3498DB;
+	    width: 300px;
+	    height: 28px;
+	    padding: 15px;
+	    color: white;
+	    background-color: #3498DB;
+	}
+
+	h2 {
+	    font-size: 24px;
+	}
+
+	/* test satırı*/
+	.animate {
+	    transition: all 0.1s;
+	    -webkit-transition: all 0.1s;
+	}
+
+	/* Sol buton */
+	.action-button {
+	    top: -5px;
+	    left: -301px;
+	    position: relative;
+	    padding: 10px 17px;
+	    float: left;
+	    border-radius: 10px;
+	    font-family: 'arial', Arial, Helvetica, sans-serif, ;
+	    font-size: 15px;
+	    color: #FFF;
+	    text-decoration: none;
+	    justify-content: center;
+	    align-items: center;
+	    display: flex;
+	}
+
+	/* Sağ buton*/
+	.baction-button {
+	    top: -86px;
+	    right: -368px;
+	    position: relative;
+	    padding: 10px 17px;
+	    float: left;
+	    border-radius: 10px;
+	    font-family: 'arial', Arial, Helvetica, sans-serif, ;
+	    font-size: 15px;
+	    color: #FFF;
+	    text-decoration: none;
+	    justify-content: center;
+	    align-items: center;
+	    display: flex;
+	}
+
+	/* orta text alt*/
+	.deaction-button {
+	    position: relative;
+	    padding: 10px 307px;
+	    float: left;
+	    border-radius: 10px;
+	    font-family: 'arial', Arial, Helvetica, sans-serif;
+	    font-size: 15px;
+	    color: #FFF;
+	    text-decoration: none;
+	    justify-content: center;
+	    align-items: center;
+	    border-color: #2980B9 3px solid;
+	    right: 0px;
+	}
+
+	.ortaction-button {
+	    top: -5px;
+	    left: -274px;
+	    position: relative;
+	    padding: 10px 17px;
+	    float: left;
+	    border-radius: 10px;
+	    font-family: 'arial', Arial, Helvetica, sans-serif, ;
+	    font-size: 15px;
+	    color: #FFF;
+	    text-decoration: none;
+	    justify-content: center;
+	    align-items: center;
+	    display: flex;
+	}
+
+
+	.blueorta {
+	    background-color: #3498DB;
+	}
+
+	.action-small-button {
+	    position: relative;
+	    padding: 10px 17px;
+	    margin: 0px 2px 0px 0px;
+	    float: left;
+	    border-radius: 4px;
+	    font-family: 'arial';
+	    font-size: 15px;
+	    color: #FFF;
+	    text-decoration: none;
+	    justify-content: center;
+	    align-items: center;
+	    display: flex;
+	}
+
+	.action-small-button:active {
+	    transform: translate(0px, 5px);
+	    -webkit-transform: translate(0px, 5px);
+	    border-bottom: 1px solid;
+	}
+
+
+	/* orta text UP*/
+	.blue {
+	    background-color: #3498DB;
+	    border-bottom: 5px solid #2980B9;
+	    text-shadow: 0px -2px #2980B9;
+	}
+
+	.green {
+	    background-color: #82BF56;
+	    border-bottom: 5px solid #669644;
+	    text-shadow: 0px -2px #669644;
+	}
+
+	.red {
+	    background-color: #E74C3C;
+	    border-bottom: 5px solid #BD3E31;
+	    text-shadow: 0px -2px #BD3E31;
+	}
+
+	.yellow {
+	    /* 	background-color: #F2CF66;
+	border-bottom: 5px solid #D1B358;
+	text-shadow: 0px -2px #D1B358; */
+	    top: -44px;
+	    left: 10px;
+	    position: relative;
+	    font-size: large;
+	}
+
+	.action-button:active {
+	    transform: translate(0px, 5px);
+	    -webkit-transform: translate(0px, 5px);
+	    border-bottom: 1px solid;
+	}
+
+	.footer {
+	    position: relative;
+	    padding: 10px 206px;
+	    border-radius: 10px 10px 0px 0px;
+	    font-family: 'arial', Arial, Helvetica, sans-serif;
+	    font-size: 15px;
+	    color: #FFF;
+	    text-decoration: none;
+	    justify-content: center;
+	    align-items: center;
+	    display: flex;
+	    border-top: #2980B9 3px solid;
+	}
