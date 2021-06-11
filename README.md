@@ -1,4 +1,4 @@
-# <a href="https://projedefteri.tk/araclar/lcdassistant/">LCDAssistant</a>
+# <a href="https://projedefteri.com/araclar/lcdassistant/">LCDAssistant</a>
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.png)](https://github.com/yunusemreaydinli/LCD-Character-Creator/blob/main/LICENSE)
 
 ### Fotoğraflarınızı saniyeler içerisinde bayt koduna dönüştürür
